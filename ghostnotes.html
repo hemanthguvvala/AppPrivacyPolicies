@@ -1,1 +1,301 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ghost Notes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0e0a;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1a1e1a;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #0DF246;
+            box-shadow: 0 0 20px rgba(13, 242, 70, 0.1);
+        }
+        
+        h1 {
+            color: #0DF246;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            color: #0DF246;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0DF246;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #0DF246;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #b0b0b0;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #b0b0b0;
+        }
+        
+        strong {
+            color: #0DF246;
+        }
+        
+        a {
+            color: #0DF246;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .updated {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .highlight {
+            background: rgba(13, 242, 70, 0.1);
+            padding: 15px;
+            border-left: 4px solid #0DF246;
+            margin: 20px 0;
+        }
+        
+        .summary {
+            background: rgba(13, 242, 70, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px solid rgba(13, 242, 70, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(13, 242, 70, 0.3);
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .emoji {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Ghost Notes</h1>
+        <p class="updated"><strong>Last Updated:</strong> December 24, 2025</p>
+        
+        <h2>Introduction</h2>
+        <p>Ghost Notes ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how Ghost Notes handles your information when you use our note-taking application.</p>
+        
+        <h2>Our Privacy Commitment</h2>
+        <div class="highlight">
+            <p><strong>Ghost Notes is a privacy-first application. We do not collect, transmit, or share any of your personal data. All your notes and information remain on your device.</strong></p>
+        </div>
+        
+        <h2>Information Storage</h2>
+        
+        <h3>Local Storage Only</h3>
+        <ul>
+            <li>All notes, tags, categories, and settings are stored locally on your device using Android's SharedPreferences</li>
+            <li>Your data never leaves your device</li>
+            <li>No cloud synchronization or remote backups are performed by the app</li>
+            <li>No internet connection is required or used</li>
+        </ul>
+        
+        <h3>Data We Store Locally</h3>
+        <p>The app stores the following information on your device:</p>
+        <ul>
+            <li><strong>Notes:</strong> Title, content, tags, timestamps, color coding, lock status</li>
+            <li><strong>Categories:</strong> Custom categories you create</li>
+            <li><strong>Settings:</strong> Your preferences including PIN, biometric settings, theme choices</li>
+            <li><strong>Reminders:</strong> Local notification schedules</li>
+            <li><strong>Search History:</strong> Your recent searches (stored locally only)</li>
+        </ul>
+        
+        <h2>Permissions</h2>
+        
+        <h3>Why We Request Permissions</h3>
+        
+        <p><strong>Biometric Authentication (USE_BIOMETRIC)</strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> To unlock the app and individual notes using fingerprint or face recognition</li>
+            <li><strong>How It Works:</strong> Your biometric data is never stored, transmitted, or accessed by the app. Authentication is handled entirely by Android's secure biometric system</li>
+            <li><strong>Optional:</strong> You can disable biometric authentication in Settings and use PIN instead</li>
+        </ul>
+        
+        <p><strong>Notifications (POST_NOTIFICATIONS)</strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> To send you reminders for your notes at scheduled times</li>
+            <li><strong>How It Works:</strong> Notifications are created locally on your device</li>
+            <li><strong>Optional:</strong> You can disable notifications in your device settings or not set any reminders</li>
+        </ul>
+        
+        <p><strong>Exact Alarms (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM)</strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> To deliver reminders at the exact time you specify</li>
+            <li><strong>How It Works:</strong> Uses Android's AlarmManager to schedule local notifications</li>
+            <li><strong>Optional:</strong> Only used if you set reminders on your notes</li>
+        </ul>
+        
+        <h2>Data We Do NOT Collect</h2>
+        <p>Ghost Notes does <strong>NOT</strong> collect, access, or transmit:</p>
+        <ul>
+            <li><span class="emoji">❌</span> Personal information (name, email, phone number)</li>
+            <li><span class="emoji">❌</span> Location data</li>
+            <li><span class="emoji">❌</span> Device identifiers</li>
+            <li><span class="emoji">❌</span> Usage analytics or statistics</li>
+            <li><span class="emoji">❌</span> Crash reports</li>
+            <li><span class="emoji">❌</span> Advertising identifiers</li>
+            <li><span class="emoji">❌</span> Biometric data (handled by Android system only)</li>
+            <li><span class="emoji">❌</span> Any data from your notes content</li>
+        </ul>
+        
+        <h2>Third-Party Services</h2>
+        <p><strong>We do not use any third-party services, including:</strong></p>
+        <ul>
+            <li><span class="emoji">❌</span> No analytics services (Google Analytics, Firebase, etc.)</li>
+            <li><span class="emoji">❌</span> No advertising networks</li>
+            <li><span class="emoji">❌</span> No cloud storage providers</li>
+            <li><span class="emoji">❌</span> No social media integrations</li>
+            <li><span class="emoji">❌</span> No tracking or marketing tools</li>
+        </ul>
+        
+        <h2>Data Security</h2>
+        
+        <h3>How We Protect Your Data</h3>
+        <ul>
+            <li><strong>Local Encryption:</strong> Your PIN is stored securely using Android's SharedPreferences</li>
+            <li><strong>Biometric Security:</strong> Uses Android's secure BiometricPrompt API with hardware-backed authentication</li>
+            <li><strong>No Network Access:</strong> The app does not request or use internet permissions</li>
+            <li><strong>App Lock:</strong> Optional biometric and PIN lock to prevent unauthorized access</li>
+            <li><strong>Individual Note Locking:</strong> Lock sensitive notes separately</li>
+        </ul>
+        
+        <h3>Your Responsibility</h3>
+        <ul>
+            <li>Keep your device secure with a screen lock</li>
+            <li>Do not share your PIN with others</li>
+            <li>Use device backup features responsibly if you enable them in Android settings</li>
+        </ul>
+        
+        <h2>Data Retention and Deletion</h2>
+        
+        <h3>Your Data, Your Control</h3>
+        <ul>
+            <li><strong>Full Control:</strong> You have complete control over all your data</li>
+            <li><strong>Export:</strong> You can export all your notes as JSON files at any time</li>
+            <li><strong>Delete Individual Notes:</strong> Trash bin allows you to recover deleted notes for 30 days (or until you empty trash)</li>
+            <li><strong>Delete All Data:</strong> Clear all data option in Settings permanently removes all app data</li>
+            <li><strong>Uninstall:</strong> Uninstalling the app removes all locally stored data from your device</li>
+        </ul>
+        
+        <h2>Children's Privacy</h2>
+        <p>Ghost Notes does not knowingly collect information from children under 13. The app is designed for general use and does not target children. Parents and guardians are responsible for monitoring their children's app usage.</p>
+        
+        <h2>Data Sharing</h2>
+        <div class="highlight">
+            <p><strong>We do not share your data with anyone because we don't have access to it.</strong></p>
+        </div>
+        <p>The only ways your data can leave your device:</p>
+        <ol>
+            <li><strong>If you choose to export:</strong> You can manually export notes as JSON and share them yourself</li>
+            <li><strong>If you use "Share" feature:</strong> You can share individual notes via Android's share menu (your choice)</li>
+            <li><strong>If Android backup is enabled:</strong> Android may backup app data to your Google account (controlled by device settings, not the app)</li>
+        </ol>
+        
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date at the top of this policy</li>
+            <li>Posting the new Privacy Policy in the app and on our GitHub repository</li>
+            <li>Notifying you in the app if there are material changes</li>
+        </ul>
+        
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li><span class="emoji">✅</span> Access all your data (all stored locally on your device)</li>
+            <li><span class="emoji">✅</span> Export your data (JSON export feature)</li>
+            <li><span class="emoji">✅</span> Delete your data (clear data or uninstall)</li>
+            <li><span class="emoji">✅</span> Control what permissions you grant (Android settings)</li>
+            <li><span class="emoji">✅</span> Use the app without biometric authentication (use PIN instead)</li>
+            <li><span class="emoji">✅</span> Disable notifications and reminders</li>
+        </ul>
+        
+        <h2>Open Source Transparency</h2>
+        <p>Ghost Notes is built with transparency in mind:</p>
+        <ul>
+            <li>The app architecture is documented</li>
+            <li>No obfuscated code that hides data collection</li>
+            <li>No hidden network requests</li>
+            <li>You can verify our privacy claims by reviewing the app's behavior</li>
+        </ul>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or Ghost Notes' privacy practices, you can contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:hemanth.guvvala@gmail.com">hemanth.guvvala@gmail.com</a></li>
+            <li><strong>Privacy Policy URL:</strong> <a href="https://hemanthguvvala.github.io/AppPrivacyPolicies/ghostnotes.html">https://hemanthguvvala.github.io/AppPrivacyPolicies/ghostnotes.html</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/hemanthguvvala/ghostnotes">https://github.com/hemanthguvvala/ghostnotes</a></li>
+            <li><strong>Report Issues:</strong> <a href="https://github.com/hemanthguvvala/ghostnotes/issues">https://github.com/hemanthguvvala/ghostnotes/issues</a></li>
+        </ul>
+        
+        <h2>Consent</h2>
+        <p>By using Ghost Notes, you agree to this Privacy Policy. If you do not agree with this policy, please do not use the app.</p>
+        
+        <div class="summary">
+            <h2>Summary (TL;DR)</h2>
+            <ul>
+                <li><span class="emoji">✅</span> <strong>All data stays on your device</strong> - We never collect or transmit anything</li>
+                <li><span class="emoji">✅</span> <strong>No internet required</strong> - Works completely offline</li>
+                <li><span class="emoji">✅</span> <strong>No tracking</strong> - No analytics, no ads, no third parties</li>
+                <li><span class="emoji">✅</span> <strong>Biometric privacy</strong> - Handled by Android, we never see your fingerprint</li>
+                <li><span class="emoji">✅</span> <strong>You control your data</strong> - Export, delete, or keep it forever</li>
+                <li><span class="emoji">✅</span> <strong>Open and transparent</strong> - No hidden data collection</li>
+            </ul>
+            <p style="margin-top: 20px;"><strong>Ghost Notes is designed to be your private digital notebook. Your thoughts, your data, your device.</strong></p>
+        </div>
+        
+        <div class="footer">
+            <p>This privacy policy is effective as of December 24, 2025 and applies to version 1.0 and later of Ghost Notes.</p>
+            <p style="margin-top: 10px;">© 2025 Ghost Notes. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
