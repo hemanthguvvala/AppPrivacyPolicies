@@ -85,6 +85,14 @@
             border-radius: 5px;
         }
 
+        .warning-box {
+            background: #fff8e1;
+            border-left: 4px solid #ff9800;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
         .contact-info {
             background: #f0f0f0;
             padding: 20px;
@@ -124,15 +132,15 @@
     <div class="container">
         <h1>Privacy Policy</h1>
         <div class="app-name">for Stitch Infinite</div>
-        <p class="last-updated"><strong>Last Updated:</strong> December 24, 2025</p>
+        <p class="last-updated"><strong>Last Updated:</strong> January 8, 2026</p>
 
         <div class="highlight-box">
-            <strong>Quick Summary:</strong> Stitch Infinite is a completely offline puzzle game. We do not collect, store, or share any personal information. All your game data stays on your device.
+            <strong>Quick Summary:</strong> Stitch Infinite is a puzzle game that operates primarily offline with optional online features. We collect minimal data locally for game functionality. Third-party services (Facebook Ads, Google Play Games) may collect data according to their policies when you use those features.
         </div>
 
         <h2>1. Introduction</h2>
         <p>
-            Welcome to Stitch Infinite! This Privacy Policy explains how our mobile application ("App") handles your information. We are committed to protecting your privacy and being transparent about our data practices.
+            Welcome to Stitch Infinite! This Privacy Policy explains how our mobile application ("App") collects, uses, and protects your information. We are committed to protecting your privacy and being transparent about our data practices.
         </p>
         <p>
             Stitch Infinite is developed and maintained by Hemanth Guvvala. By using this App, you agree to the terms outlined in this Privacy Policy.
@@ -140,55 +148,133 @@
 
         <h2>2. Information We Collect</h2>
         
-        <h3>2.1 Personal Information</h3>
+        <h3>2.1 Personal Information We Collect Directly</h3>
         <p>
-            <strong>We do NOT collect any personal information.</strong> The App does not require, request, or collect:
+            <strong>The App itself does NOT collect any personally identifiable information.</strong> We do not require, request, or collect:
         </p>
         <ul>
             <li>Name or email address</li>
             <li>Phone number</li>
-            <li>Location data</li>
+            <li>Precise location data</li>
             <li>Contact information</li>
-            <li>Photos or media files</li>
-            <li>Device identifiers for tracking</li>
+            <li>Photos or media files (except when you choose to share game screenshots)</li>
         </ul>
 
         <h3>2.2 Game Data (Local Storage Only)</h3>
         <p>
-            The App stores the following game-related data <strong>locally on your device only</strong>:
+            The App stores the following game-related data <strong>locally on your device using Android Room Database</strong>:
         </p>
         <ul>
-            <li><strong>Game Statistics:</strong> Best score, total games played, total score, highest tile achieved</li>
-            <li><strong>Game Progress:</strong> Current game state, tile positions, and current score</li>
-            <li><strong>Gameplay Data:</strong> Total moves made, last played timestamp</li>
-            <li><strong>Settings:</strong> User preferences for game settings</li>
+            <li><strong>Player Statistics:</strong> Best score, total games played, total score, highest tile achieved, total moves</li>
+            <li><strong>Game Progress:</strong> Current game state, tile positions, current score, last played timestamp</li>
+            <li><strong>In-Game Currency:</strong> Coins earned, power-up counts (bombs, shuffles, hints)</li>
+            <li><strong>Achievements & Challenges:</strong> Achievement progress, completed challenges, unlocked achievements</li>
+            <li><strong>Streak Data:</strong> Current streak, longest streak, last completion date, total days played</li>
+            <li><strong>Theme Preferences:</strong> Selected theme, unlocked themes</li>
+            <li><strong>Settings:</strong> Haptic feedback preference, sound settings, onboarding status</li>
+            <li><strong>Game Modes:</strong> Selected game mode preference</li>
         </ul>
         <p>
-            This data is stored using Android's Room Database and remains entirely on your device. It is never transmitted to external servers or third parties.
+            This data is stored using Android's Room Database and SharedPreferences, and remains entirely on your device. It is never transmitted to our servers.
         </p>
 
+        <h3>2.3 Data Collected by Third-Party Services</h3>
+        <p>
+            When you use certain optional features, third-party services may collect data according to their own privacy policies:
+        </p>
+
+        <h4>Google Play Games Services (Optional)</h4>
+        <p>
+            When you sign in to Google Play Games for achievements and leaderboards, Google may collect:
+        </p>
+        <ul>
+            <li>Google Account information (email, profile)</li>
+            <li>Game scores and achievement data</li>
+            <li>Play Games activity and usage statistics</li>
+            <li>Device information and identifiers</li>
+        </ul>
+        <p>
+            <strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a><br>
+            <strong>Note:</strong> You can play the entire game without signing into Google Play Games.
+        </p>
+
+        <h4>Facebook Audience Network (Advertising)</h4>
+        <p>
+            The App displays advertisements through Facebook Audience Network. When ads are shown, Facebook may collect:
+        </p>
+        <ul>
+            <li>Device identifiers (Android Advertising ID)</li>
+            <li>IP address and approximate location</li>
+            <li>Device type, OS version, and app version</li>
+            <li>Ad interaction data (views, clicks)</li>
+            <li>App usage patterns for ad targeting</li>
+            <li>Network information (carrier, connection type)</li>
+        </ul>
+        <p>
+            <strong>Privacy Policy:</strong> <a href="https://www.facebook.com/privacy/policy/" target="_blank">https://www.facebook.com/privacy/policy/</a><br>
+            <strong>Ad Choices:</strong> <a href="https://www.facebook.com/ads/preferences" target="_blank">https://www.facebook.com/ads/preferences</a>
+        </p>
+
+        <h4>Google Play Billing (In-App Purchases)</h4>
+        <p>
+            When you make in-app purchases, Google Play handles all payment processing. Google may collect:
+        </p>
+        <ul>
+            <li>Purchase transaction details</li>
+            <li>Payment information (processed securely by Google)</li>
+            <li>Google Account information</li>
+        </ul>
+        <p>
+            <strong>Note:</strong> We do not have access to your payment card details. All payments are processed securely by Google Play.
+        </p>
+
+        <h3>2.4 Automatically Collected Information</h3>
+        <p>
+            The App's core functionality does not automatically collect analytics or usage data. However, third-party services mentioned above may automatically collect technical information such as:
+        </p>
+        <ul>
+            <li>Device model and manufacturer</li>
+            <li>Operating system version</li>
+            <li>App version</li>
+            <li>IP address (collected by ad networks)</li>
+            <li>Network connection type</li>
+        </ul>
+
         <h2>3. How We Use Your Information</h2>
+        
+        <h3>3.1 Locally Stored Game Data</h3>
         <p>
             The locally stored game data is used solely for:
         </p>
         <ul>
             <li>Maintaining your game progress between sessions</li>
             <li>Tracking your personal best scores and statistics</li>
-            <li>Providing the undo functionality during gameplay</li>
-            <li>Displaying your achievement history</li>
-            <li>Preserving your game settings and preferences</li>
+            <li>Providing power-ups and in-game currency system</li>
+            <li>Managing achievements, challenges, and daily streaks</li>
+            <li>Applying your selected theme and settings</li>
+            <li>Displaying your achievement and leaderboard history</li>
+        </ul>
+
+        <h3>3.2 Third-Party Service Data Usage</h3>
+        <p>
+            Data collected by third-party services is used by those services for:
+        </p>
+        <ul>
+            <li><strong>Google Play Games:</strong> Syncing achievements and leaderboards, providing social gaming features</li>
+            <li><strong>Facebook Ads:</strong> Delivering relevant advertisements, measuring ad performance, monetizing the free app</li>
+            <li><strong>Google Play Billing:</strong> Processing in-app purchases securely</li>
         </ul>
 
         <h2>4. Data Storage and Security</h2>
         
         <h3>4.1 Local Storage</h3>
         <p>
-            All game data is stored locally on your device using Android's secure Room Database framework. This data is protected by Android's app sandboxing, which prevents other apps from accessing your Stitch Infinite data.
+            All game data is stored locally on your device using Android's secure Room Database framework and SharedPreferences. This data is protected by Android's app sandboxing, which prevents other apps from accessing your Stitch Infinite data.
         </p>
 
-        <h3>4.2 No Cloud Backup</h3>
+        <h3>4.2 No Cloud Backup by Us</h3>
         <p>
-            The App does not use cloud storage or backup services. Your data remains exclusively on your device.
+            We do not use cloud storage or backup services for your game data. Your data remains exclusively on your device. However, Android's automatic backup feature may back up SharedPreferences to your Google account - this is controlled by your device settings.
         </p>
 
         <h3>4.3 Data Deletion</h3>
@@ -196,98 +282,204 @@
             You have full control over your data:
         </p>
         <ul>
-            <li><strong>Reset Statistics:</strong> Use the "Reset All Data" option in Settings to clear all game statistics</li>
+            <li><strong>Reset Game Data:</strong> Use the "Reset All Data" option in Settings to clear all game statistics and progress</li>
             <li><strong>Uninstall:</strong> Uninstalling the App will permanently delete all locally stored game data</li>
+            <li><strong>Third-Party Data:</strong> To delete data collected by third parties, refer to their privacy policies and opt-out mechanisms</li>
         </ul>
 
-        <h2>5. Third-Party Services</h2>
+        <h2>5. Third-Party Services Summary</h2>
         <p>
-            Stitch Infinite does NOT integrate with any third-party services, including:
+            Stitch Infinite integrates with the following third-party services:
         </p>
-        <ul>
-            <li>Analytics services (e.g., Google Analytics, Firebase Analytics)</li>
-            <li>Advertising networks</li>
-            <li>Social media platforms</li>
-            <li>Crash reporting services</li>
-            <li>Cloud storage services</li>
-        </ul>
-        <p>
-            The App operates completely offline and does not require an internet connection.
-        </p>
+
+        <div class="warning-box">
+            <strong>Important:</strong> These third-party services have their own privacy policies and data collection practices. We encourage you to review them.
+        </div>
+
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <tr style="background: #f5f5f5; font-weight: bold;">
+                <td style="padding: 10px; border: 1px solid #ddd;">Service</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Purpose</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Optional?</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Facebook Audience Network</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Display advertisements</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">No (supports free app)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Google Play Games</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Achievements & leaderboards</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Yes (optional sign-in)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Google Play Billing</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">In-app purchases</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Yes (only if purchasing)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Google Play In-App Review</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Request app reviews</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Yes (optional prompt)</td>
+            </tr>
+        </table>
 
         <h2>6. Permissions</h2>
         <p>
-            Stitch Infinite does NOT request any special Android permissions. The App only uses standard permissions required for basic functionality:
+            Stitch Infinite requests the following Android permissions:
         </p>
         <ul>
-            <li><strong>Storage:</strong> Used only to save game data locally on your device</li>
+            <li><strong>INTERNET:</strong> Required for displaying ads and syncing with Google Play Games (when signed in)</li>
+            <li><strong>ACCESS_NETWORK_STATE:</strong> To check internet connectivity before loading ads or syncing data</li>
         </ul>
         <p>
-            No network, camera, microphone, or location permissions are requested or used.
+            <strong>Storage:</strong> The app uses standard local storage permissions to save game data. No additional storage permissions are requested.
+        </p>
+        <p>
+            No camera, microphone, precise location, or contacts permissions are requested or used.
         </p>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>7. Advertising and Tracking</h2>
+        
+        <h3>7.1 Advertisements</h3>
         <p>
-            Stitch Infinite is safe for users of all ages, including children. Since we do not collect any personal information, the App complies with the Children's Online Privacy Protection Act (COPPA) and similar regulations worldwide.
-        </p>
-        <p>
-            Parents and guardians can be confident that their children's privacy is fully protected when using this App.
-        </p>
-
-        <h2>8. Data Sharing and Disclosure</h2>
-        <p>
-            <strong>We do NOT share, sell, rent, or disclose any data to third parties.</strong> Since all data is stored locally on your device and we do not collect personal information, there is nothing to share.
-        </p>
-        <p>
-            We will never:
+            Stitch Infinite displays advertisements through Facebook Audience Network to support the free version of the app. These ads may be:
         </p>
         <ul>
-            <li>Sell your information to advertisers or data brokers</li>
-            <li>Share data with third-party services or partners</li>
-            <li>Transfer data across borders or to external servers</li>
-            <li>Use your data for marketing or profiling purposes</li>
+            <li>Banner ads (displayed during gameplay)</li>
+            <li>Interstitial ads (displayed between games)</li>
+            <li>Rewarded video ads (optional, shown when earning bonus coins)</li>
         </ul>
 
-        <h2>9. International Users</h2>
+        <h3>7.2 Ad Personalization</h3>
         <p>
-            Stitch Infinite can be used worldwide. Since all data is stored locally on your device and we do not transmit any information, there are no cross-border data transfer concerns. Your data never leaves your device.
+            Facebook may use your Android Advertising ID to show personalized ads based on your interests. You can opt out of personalized advertising:
+        </p>
+        <ul>
+            <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
+            <li><strong>Facebook Ad Preferences:</strong> <a href="https://www.facebook.com/ads/preferences" target="_blank">https://www.facebook.com/ads/preferences</a></li>
+        </ul>
+
+        <h3>7.3 No Analytics Tracking</h3>
+        <p>
+            We do NOT use analytics services like Google Analytics or Firebase Analytics to track your behavior within the app. The only tracking that occurs is through the advertising network for ad delivery and measurement.
         </p>
 
-        <h2>10. Changes to This Privacy Policy</h2>
+        <h2>8. Children's Privacy</h2>
         <p>
-            We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make changes:
+            Stitch Infinite is suitable for users of all ages, including children under 13. We take children's privacy seriously and comply with the Children's Online Privacy Protection Act (COPPA).
+        </p>
+        <p>
+            <strong>Important Notes for Parents:</strong>
+        </p>
+        <ul>
+            <li>The App does not knowingly collect personal information from children</li>
+            <li>All game data is stored locally on the device</li>
+            <li>Advertisements from Facebook Audience Network are displayed, which may collect device identifiers</li>
+            <li>In-app purchases require parental approval through your device's settings</li>
+            <li>Google Play Games sign-in is optional and requires a Google account (13+ years old or with parental consent)</li>
+        </ul>
+        <p>
+            Parents should review the privacy policies of Facebook and Google to understand data collection from ads and optional features.
+        </p>
+
+        <h2>9. Data Sharing and Disclosure</h2>
+        
+        <h3>9.1 Our Data Sharing</h3>
+        <p>
+            <strong>We do NOT collect, share, sell, or rent any personal data to third parties.</strong> Since we don't collect your data, we have nothing to share.
+        </p>
+
+        <h3>9.2 Third-Party Data Sharing</h3>
+        <p>
+            When you use integrated services, those services may share data according to their policies:
+        </p>
+        <ul>
+            <li><strong>Facebook Audience Network:</strong> May share data with advertisers for ad targeting and measurement (anonymized)</li>
+            <li><strong>Google Play Games:</strong> Your achievements and leaderboard scores are visible to other players based on your Google Play Games privacy settings</li>
+        </ul>
+
+        <h3>9.3 Legal Requirements</h3>
+        <p>
+            Since we don't collect personal data, we have no data to disclose. However, third-party services may be required to disclose information to comply with legal obligations.
+        </p>
+
+        <h2>10. International Users</h2>
+        <p>
+            Stitch Infinite can be used worldwide. Your locally stored game data never leaves your device. However:
+        </p>
+        <ul>
+            <li>Facebook Audience Network operates globally and may transfer data across borders</li>
+            <li>Google Play Games data is stored on Google's servers and may be transferred internationally</li>
+            <li>Users in the European Union have specific rights under GDPR (see Section 11)</li>
+        </ul>
+
+        <h2>11. Your Rights (GDPR, CCPA, and Other Privacy Laws)</h2>
+        
+        <h3>11.1 European Union (GDPR)</h3>
+        <p>
+            If you are in the European Economic Area, you have the following rights:
+        </p>
+        <ul>
+            <li><strong>Right to Access:</strong> View your game statistics in the app's Stats/Leaderboard screen</li>
+            <li><strong>Right to Deletion:</strong> Reset all data via Settings or uninstall the app</li>
+            <li><strong>Right to Restrict Processing:</strong> Disable optional features like Google Play Games</li>
+            <li><strong>Right to Object:</strong> Opt out of personalized ads through your device settings</li>
+            <li><strong>Right to Data Portability:</strong> Since data is stored locally, you can access it through the app</li>
+        </ul>
+        <p>
+            For data collected by third-party services, contact them directly using the privacy policy links provided.
+        </p>
+
+        <h3>11.2 California (CCPA)</h3>
+        <p>
+            California residents have the right to:
+        </p>
+        <ul>
+            <li>Know what personal information is collected (see Section 2)</li>
+            <li>Request deletion of personal information (reset via Settings or uninstall)</li>
+            <li>Opt out of the "sale" of personal information (we don't sell data; third-party services have their own opt-out mechanisms)</li>
+        </ul>
+
+        <h3>11.3 General Rights</h3>
+        <p>
+            All users have the right to:
+        </p>
+        <ul>
+            <li>Access their locally stored game data through the app interface</li>
+            <li>Delete their data by resetting in Settings or uninstalling</li>
+            <li>Opt out of personalized advertising through device settings</li>
+            <li>Play without signing into Google Play Games</li>
+        </ul>
+
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices, new features, or legal requirements. When we make changes:
         </p>
         <ul>
             <li>The "Last Updated" date at the top of this page will be revised</li>
-            <li>Significant changes will be communicated through the App or this page</li>
+            <li>Significant changes may be communicated through an in-app notification</li>
             <li>Continued use of the App after changes constitutes acceptance of the updated policy</li>
         </ul>
         <p>
             We encourage you to review this Privacy Policy periodically.
         </p>
 
-        <h2>11. Your Rights</h2>
+        <h2>13. Security Measures</h2>
         <p>
-            You have complete control over your data:
+            We implement reasonable security measures to protect your data:
         </p>
         <ul>
-            <li><strong>Access:</strong> View your statistics in the Leaderboard/Stats screen</li>
-            <li><strong>Deletion:</strong> Reset all data via Settings or uninstall the App</li>
-            <li><strong>Portability:</strong> Since data is not collected centrally, there is no data to export</li>
+            <li>Local data is protected by Android's app sandboxing</li>
+            <li>No sensitive personal information is collected or transmitted</li>
+            <li>In-app purchases are processed securely through Google Play's encrypted systems</li>
+            <li>The app uses HTTPS for all network communications with third-party services</li>
         </ul>
-
-        <h2>12. Legal Compliance</h2>
         <p>
-            This Privacy Policy is designed to comply with:
+            However, no method of electronic storage is 100% secure. Third-party services have their own security measures as described in their policies.
         </p>
-        <ul>
-            <li>General Data Protection Regulation (GDPR) - European Union</li>
-            <li>California Consumer Privacy Act (CCPA) - United States</li>
-            <li>Children's Online Privacy Protection Act (COPPA) - United States</li>
-            <li>Other applicable privacy laws and regulations worldwide</li>
-        </ul>
 
-        <h2>13. Contact Information</h2>
+        <h2>14. Contact Information</h2>
         <div class="contact-info">
             <p>
                 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
@@ -298,17 +490,34 @@
                 <strong>GitHub:</strong> <a href="https://github.com/hemanthguvvala" target="_blank">github.com/hemanthguvvala</a>
             </p>
             <p style="margin-top: 15px;">
-                We will respond to your inquiries within a reasonable timeframe.
+                We will respond to your inquiries within a reasonable timeframe (typically within 30 days).
             </p>
         </div>
 
-        <h2>14. Consent</h2>
+        <h2>15. Third-Party Privacy Policies</h2>
+        <p>
+            For complete information about data collection by third-party services, please review:
+        </p>
+        <ul>
+            <li><strong>Facebook Audience Network:</strong> <a href="https://www.facebook.com/privacy/policy/" target="_blank">https://www.facebook.com/privacy/policy/</a></li>
+            <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            <li><strong>Google Play Games:</strong> <a href="https://play.google.com/intl/en-US_us/about/play-terms/" target="_blank">https://play.google.com/intl/en-US_us/about/play-terms/</a></li>
+        </ul>
+
+        <h2>16. Consent</h2>
         <p>
             By using Stitch Infinite, you consent to this Privacy Policy and agree to its terms. If you do not agree with this policy, please do not use the App.
         </p>
+        <p>
+            For optional features (Google Play Games sign-in), you will be asked for explicit consent before those services are activated.
+        </p>
 
         <div class="highlight-box" style="margin-top: 40px;">
-            <strong>Summary:</strong> Stitch Infinite is a privacy-friendly, offline puzzle game. We don't collect personal data, we don't track you, and all your game progress stays on your device. Enjoy the game with complete peace of mind!
+            <strong>Privacy-Focused Design:</strong> While Stitch Infinite uses some third-party services for ads and optional features, we've designed the core game to respect your privacy. All your game progress, statistics, and preferences are stored locally on your device. You maintain full control over your data and can play the game with minimal data collection.
+        </div>
+
+        <div class="warning-box" style="margin-top: 20px;">
+            <strong>Transparency Note:</strong> This privacy policy accurately reflects all data collection and third-party services used in Stitch Infinite. We believe in being completely transparent about what data is collected and how it's used. If you have any questions or concerns, please don't hesitate to contact us.
         </div>
     </div>
 </body>
