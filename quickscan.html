@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for QuickScan - QR Code and Barcode Scanner App">
+    <meta name="description" content="Privacy Policy for QuickScan - Privacy-First QR Code Scanner with Secure Vault">
     <title>Privacy Policy - QuickScan</title>
     <style>
         * {
@@ -98,6 +98,16 @@
             border-radius: 4px;
         }
         
+        .security-badge {
+            background: linear-gradient(135deg, #FFB300 0%, #FFA000 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        
         .contact-info {
             background: #f8f9fa;
             padding: 25px;
@@ -128,6 +138,14 @@
             font-size: 0.9em;
         }
         
+        .new-feature {
+            background: #fff3cd;
+            border-left: 4px solid #FFB300;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -146,21 +164,25 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="app-icon">📱</div>
+            <div class="app-icon">🔒📱</div>
             <h1>Privacy Policy</h1>
-            <p class="subtitle">QuickScan - QR Code & Barcode Scanner</p>
+            <p class="subtitle">QuickScan - Privacy-First QR Scanner with Secure Vault</p>
         </div>
 
         <div class="last-updated">
-            <strong>Last Updated:</strong> December 28, 2025
+            <strong>Last Updated:</strong> January 15, 2026
         </div>
 
         <div class="highlight-box">
-            <p><strong>Your Privacy Matters:</strong> QuickScan is committed to protecting your privacy. This app is designed with privacy at its core - we don't collect, store, or share any of your personal information with third parties.</p>
+            <p><strong>Your Privacy Matters:</strong> QuickScan is committed to protecting your privacy with military-grade encryption. This app is designed with privacy at its core - we don't collect, store, or share any of your personal information with third parties. Your sensitive data is protected by AES-256-GCM encryption and biometric authentication.</p>
+        </div>
+
+        <div class="security-badge">
+            🛡️ Military-Grade Security | 🔐 Hardware-Backed Encryption | 👆 Biometric Protection
         </div>
 
         <h2>1. Introduction</h2>
-        <p>Welcome to QuickScan! This Privacy Policy explains how QuickScan ("we", "our", or "the app") handles your information when you use our QR code and barcode scanning application. We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
+        <p>Welcome to QuickScan! This Privacy Policy explains how QuickScan ("we", "our", or "the app") handles your information when you use our privacy-first QR code and barcode scanning application with Secure Vault. We are committed to protecting your privacy with industry-leading security measures and ensuring complete transparency about our data practices.</p>
         <p>By using QuickScan, you agree to the terms outlined in this Privacy Policy. If you do not agree with this policy, please do not use the app.</p>
 
         <h2>2. Information We Collect</h2>
@@ -174,28 +196,88 @@
             <li>Scanned code content (text, URLs, etc.)</li>
             <li>Timestamp of when the scan was performed</li>
             <li>Type of code scanned (QR code, barcode, etc.)</li>
+            <li>Category classification (automatic)</li>
         </ul>
         <p><strong>Important:</strong> This scan history is stored locally on your device only and is never transmitted to external servers or shared with third parties.</p>
 
-        <h3>2.3 App Settings</h3>
-        <p>Your app preferences and settings (such as theme preferences, sound settings, etc.) are stored locally on your device to enhance your user experience.</p>
+        <div class="new-feature">
+            <h3>2.3 Secure Vault (NEW - v1.3.0)</h3>
+            <p>QuickScan now includes an optional <strong>Secure Vault</strong> feature for storing sensitive scans with military-grade encryption:</p>
+            <ul>
+                <li><strong>Encrypted Content:</strong> Sensitive scans stored in the vault are encrypted using AES-256-GCM encryption</li>
+                <li><strong>Encryption Keys:</strong> Encryption keys are stored in Android Keystore (hardware-backed security)</li>
+                <li><strong>Initialization Vectors:</strong> Unique IV for each encrypted item (stored locally)</li>
+                <li><strong>Biometric Data:</strong> Device biometric authentication (fingerprint/face) is used to unlock the vault - <strong>we never access or store your biometric data</strong></li>
+                <li><strong>Metadata:</strong> Category, label, expiration timestamp, access count, favorite status (stored locally)</li>
+            </ul>
+            <p><strong>Privacy by Design:</strong> Items saved to Secure Vault never appear in regular history. All vault data is stored locally on your device with hardware-backed encryption. We cannot access your vault data.</p>
+        </div>
+
+        <div class="new-feature">
+            <h3>2.4 Smart Privacy Detection (NEW - v1.3.0)</h3>
+            <p>QuickScan includes intelligent privacy detection that automatically identifies sensitive content:</p>
+            <ul>
+                <li><strong>Pattern Analysis:</strong> Detects passwords, cryptocurrency addresses, private keys, and sensitive keywords locally on your device</li>
+                <li><strong>Processing:</strong> All detection happens on-device using pattern matching and entropy analysis - no data is sent to external servers</li>
+                <li><strong>Detection Results:</strong> Reasons for detection are shown to you but never transmitted externally</li>
+            </ul>
+            <p><strong>User Control:</strong> You can enable or disable smart detection at any time in Settings. Detection results are used only to provide privacy recommendations.</p>
+        </div>
+
+        <h3>2.5 Biometric Authentication</h3>
+        <p>If you use the Secure Vault feature, the app may request access to your device's biometric authentication (fingerprint or face unlock):</p>
+        <ul>
+            <li><strong>We never access, store, or process your biometric data</strong></li>
+            <li>Biometric authentication is handled entirely by your device's secure hardware</li>
+            <li>The app only receives a success/failure response from your device</li>
+            <li>Your biometric data never leaves your device's secure enclave</li>
+        </ul>
+
+        <h3>2.6 App Settings</h3>
+        <p>Your app preferences and settings are stored locally on your device:</p>
+        <ul>
+            <li>Theme preferences (dark mode)</li>
+            <li>Sound and vibration settings</li>
+            <li>Auto-detect sensitive content (enabled/disabled)</li>
+            <li>Vault items skip history (enabled/disabled)</li>
+            <li>Auto-copy to clipboard</li>
+        </ul>
 
         <h2>3. How We Use Your Information</h2>
         <p>The information collected by QuickScan is used solely for the following purposes:</p>
         <ul>
             <li><strong>Scanning Functionality:</strong> Camera access is used to scan QR codes and barcodes in real-time</li>
             <li><strong>Scan History:</strong> Stored locally to allow you to review previously scanned codes</li>
+            <li><strong>Secure Vault:</strong> Encrypted storage for sensitive scans with biometric protection</li>
+            <li><strong>Smart Detection:</strong> On-device pattern matching to identify sensitive content and provide privacy recommendations</li>
             <li><strong>App Settings:</strong> To remember your preferences and provide a personalized experience</li>
         </ul>
 
         <h2>4. Data Storage and Security</h2>
         <p>All data collected by QuickScan is stored locally on your device using secure storage mechanisms provided by the Android operating system. We implement the following security measures:</p>
+        
+        <h3>4.1 Standard Storage</h3>
         <ul>
-            <li>Data is stored in encrypted local databases</li>
-            <li>No data is transmitted over the internet</li>
-            <li>No external servers or cloud storage is used</li>
-            <li>Data remains under your complete control</li>
+            <li>Regular scan history stored in encrypted local databases (Room/SQLite)</li>
+            <li>App settings stored in DataStore with encryption at rest</li>
+            <li>No data transmitted over the internet</li>
+            <li>No external servers or cloud storage used</li>
         </ul>
+
+        <h3>4.2 Secure Vault Storage (Military-Grade)</h3>
+        <ul>
+            <li><strong>Encryption Algorithm:</strong> AES-256-GCM (Advanced Encryption Standard with Galois/Counter Mode)</li>
+            <li><strong>Key Size:</strong> 256-bit encryption keys</li>
+            <li><strong>Key Storage:</strong> Android Keystore (hardware-backed, TEE/Secure Element)</li>
+            <li><strong>Authentication Tag:</strong> 128-bit GCM authentication tag for data integrity</li>
+            <li><strong>Unique IVs:</strong> Each encrypted item uses a unique initialization vector</li>
+            <li><strong>Biometric Lock:</strong> Vault access requires device biometric authentication</li>
+            <li><strong>Auto-Expire:</strong> Optional ephemeral storage (1-72 hours) with automatic cleanup</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>What This Means:</strong> Your Secure Vault data uses the same encryption standard trusted by governments and financial institutions. Even if someone gains physical access to your device, your vault data remains protected by hardware-backed encryption and biometric authentication.</p>
+        </div>
 
         <h2>5. Data Sharing and Third Parties</h2>
         <div class="highlight-box">
@@ -203,56 +285,78 @@
         </div>
         <p>QuickScan operates entirely offline with respect to your personal data. We do not:</p>
         <ul>
-            <li>Share your scan history with any third parties</li>
+            <li>Share your scan history or vault data with any third parties</li>
             <li>Sell your data to advertisers or marketers</li>
-            <li>Upload your information to external servers</li>
+            <li>Upload your information to external servers or cloud services</li>
             <li>Use analytics or tracking services that collect personal information</li>
-            <li>Integrate third-party advertising networks</li>
+            <li>Integrate third-party advertising networks that track users</li>
+            <li>Transmit encryption keys or encrypted data to external servers</li>
         </ul>
 
         <h2>6. Permissions Required</h2>
         <p>QuickScan requires the following permissions to function:</p>
         <ul>
-            <li><strong>Camera Permission:</strong> Required to scan QR codes and barcodes. Without this permission, the core functionality of the app cannot work.</li>
+            <li><strong>Camera Permission (Required):</strong> To scan QR codes and barcodes. Without this, the core functionality cannot work.</li>
+            <li><strong>Biometric Permission (Optional):</strong> To unlock Secure Vault using fingerprint or face authentication. Only required if you use the Secure Vault feature.</li>
+            <li><strong>Storage Permission (Optional):</strong> To export scan history to CSV/JSON files or save QR codes to gallery.</li>
         </ul>
         <p>You can revoke these permissions at any time through your device's settings, though this will limit the app's functionality.</p>
 
         <h2>7. Data Retention and Deletion</h2>
         <p>You have complete control over your data:</p>
         <ul>
-            <li><strong>Scan History:</strong> You can delete individual scan records or clear your entire scan history at any time through the app's settings</li>
-            <li><strong>Complete Data Removal:</strong> Uninstalling the app will permanently delete all locally stored data, including scan history and app settings</li>
+            <li><strong>Scan History:</strong> Delete individual scan records or clear entire history anytime through Settings</li>
+            <li><strong>Secure Vault:</strong> Delete individual vault items or all vault data anytime. Deleted items are immediately and permanently removed.</li>
+            <li><strong>Auto-Expire:</strong> Vault items can be set to automatically delete after 1-72 hours</li>
+            <li><strong>Complete Data Removal:</strong> Uninstalling the app permanently deletes all locally stored data, including scan history, vault data, encryption keys, and app settings</li>
+        </ul>
+        <p><strong>Note:</strong> Due to hardware-backed encryption in Secure Vault, once data is deleted, it cannot be recovered - not even by us.</p>
+
+        <h2>8. Privacy by Design</h2>
+        <p>QuickScan implements privacy-first architecture:</p>
+        <ul>
+            <li><strong>Zero Tracking:</strong> No analytics, telemetry, or user tracking of any kind</li>
+            <li><strong>Offline First:</strong> Core functionality works 100% offline</li>
+            <li><strong>Local Storage:</strong> All data stored on your device, never on our servers</li>
+            <li><strong>Smart Detection:</strong> Automatically identifies sensitive content (passwords, crypto, medical data) and recommends secure storage</li>
+            <li><strong>Vault Skip History:</strong> Items saved to Secure Vault never appear in regular history (default: enabled)</li>
+            <li><strong>Transparent Encryption:</strong> You can see what's encrypted and control your data</li>
+            <li><strong>No Cloud Dependencies:</strong> App functions without internet connection</li>
         </ul>
 
-        <h2>8. Children's Privacy</h2>
-        <p>QuickScan does not knowingly collect any personal information from children under the age of 13. The app is designed for general use and does not target children. Since we don't collect or transmit personal information, the app can be used by all ages safely.</p>
+        <h2>9. Children's Privacy</h2>
+        <p>QuickScan does not knowingly collect any personal information from children under the age of 13. The app is designed for general use and does not target children. Since we don't collect or transmit personal information to external parties, the app can be used by all ages safely. Parents should supervise their children's use of the Secure Vault feature.</p>
 
-        <h2>9. External Links</h2>
+        <h2>10. External Links</h2>
         <p>When you scan a QR code containing a URL, QuickScan may offer to open the link in your device's web browser. Please note:</p>
         <ul>
             <li>We are not responsible for the privacy practices of external websites</li>
             <li>We recommend reviewing the privacy policies of any websites you visit</li>
             <li>Opening external links is always optional and requires your explicit action</li>
+            <li>Sensitive URLs can be saved to Secure Vault instead of being opened immediately</li>
         </ul>
 
-        <h2>10. Changes to This Privacy Policy</h2>
+        <h2>11. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make changes:</p>
         <ul>
-            <li>The "Last Updated" date at the top of this policy will be revised</li>
-            <li>Significant changes will be communicated through the app or the app store listing</li>
+            <li>The "Last Updated" date at the top will be revised</li>
+            <li>Significant changes will be communicated through the app or app store listing</li>
             <li>Continued use of the app after changes constitutes acceptance of the updated policy</li>
         </ul>
 
-        <h2>11. Your Rights</h2>
+        <h2>12. Your Rights</h2>
         <p>As a user of QuickScan, you have the following rights:</p>
         <ul>
-            <li><strong>Access:</strong> Access all your stored scan history through the app interface</li>
-            <li><strong>Deletion:</strong> Delete any or all of your scan records at any time</li>
-            <li><strong>Control:</strong> Full control over when and how the app accesses your camera</li>
-            <li><strong>Transparency:</strong> Clear visibility into what data is stored locally</li>
+            <li><strong>Access:</strong> Access all your stored scan history and vault items through the app interface</li>
+            <li><strong>Deletion:</strong> Delete any or all of your scan records and vault items at any time</li>
+            <li><strong>Export:</strong> Export your scan history to CSV/JSON format</li>
+            <li><strong>Control:</strong> Full control over when and how the app accesses your camera and biometric authentication</li>
+            <li><strong>Transparency:</strong> Clear visibility into what data is stored, encrypted, and protected</li>
+            <li><strong>Privacy Settings:</strong> Configure auto-detection and vault history behavior</li>
+            <li><strong>Biometric Control:</strong> Enable or disable biometric vault access at any time</li>
         </ul>
 
-        <h2>12. Contact Us</h2>
+        <h2>13. Contact Us</h2>
         <div class="contact-info">
             <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or QuickScan's privacy practices, please contact us:</p>
             <p><strong>Developer:</strong> Hemanth Guvvala</p>
@@ -261,26 +365,41 @@
             <p>We will do our best to respond to your inquiries promptly.</p>
         </div>
 
-        <h2>13. Legal Compliance</h2>
+        <h2>14. Legal Compliance</h2>
         <p>QuickScan is designed to comply with applicable privacy laws and regulations, including:</p>
         <ul>
-            <li>General Data Protection Regulation (GDPR) for European users</li>
-            <li>California Consumer Privacy Act (CCPA) for California users</li>
-            <li>Other applicable regional privacy regulations</li>
+            <li><strong>GDPR (General Data Protection Regulation):</strong> For European users</li>
+            <li><strong>CCPA (California Consumer Privacy Act):</strong> For California users</li>
+            <li><strong>PIPEDA (Personal Information Protection):</strong> For Canadian users</li>
+            <li><strong>Other regional privacy regulations</strong></li>
         </ul>
-        <p>Since we do not collect, process, or transmit personal data to external parties, compliance with these regulations is simplified.</p>
+        <p>Since we do not collect, process, or transmit personal data to external parties, compliance with these regulations is simplified. Our Secure Vault encryption meets or exceeds industry standards for data protection.</p>
 
-        <h2>14. Consent</h2>
+        <h2>15. Security Incidents</h2>
+        <p>In the unlikely event of a security incident:</p>
+        <ul>
+            <li>Since all data is stored locally on your device with hardware-backed encryption, remote breaches are not possible</li>
+            <li>If a vulnerability is discovered in the app, we will release a security update immediately</li>
+            <li>Users will be notified through app store updates and in-app notifications</li>
+            <li>We encourage users to keep the app updated to the latest version</li>
+        </ul>
+
+        <h2>16. Consent</h2>
         <p>By installing and using QuickScan, you consent to:</p>
         <ul>
             <li>The collection and local storage of scan history as described in this policy</li>
             <li>The use of your device's camera for scanning purposes</li>
+            <li>Optional use of Secure Vault with AES-256-GCM encryption</li>
+            <li>Optional use of device biometric authentication for vault access</li>
+            <li>On-device smart privacy detection (can be disabled)</li>
             <li>The storage of app settings and preferences locally on your device</li>
         </ul>
+        <p>You can withdraw consent for specific features by disabling them in Settings or uninstalling the app.</p>
 
         <div class="footer">
-            <p>© 2025 QuickScan by Hemanth Guvvala. All rights reserved.</p>
-            <p>This privacy policy is effective as of December 28, 2025.</p>
+            <p>© 2026 QuickScan by Hemanth Guvvala. All rights reserved.</p>
+            <p>This privacy policy is effective as of January 15, 2026.</p>
+            <p><strong>Privacy-First | Military-Grade Encryption | Zero Tracking</strong></p>
         </div>
     </div>
 </body>
