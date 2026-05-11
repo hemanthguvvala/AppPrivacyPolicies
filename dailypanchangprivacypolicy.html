@@ -46,18 +46,20 @@
 <body>
     <span class="badge">Daily Panchang</span>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Last updated: 9 May 2026</p>
+    <p class="subtitle">Last updated: 11 May 2026</p>
 
     <p>
         Daily Panchang (the &ldquo;app&rdquo;) is a Hindu calendar and panchang utility published by Hemanth Guvvala
         (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy explains what the app does and does not collect.
-        The short version: <strong>we do not collect, store, or transmit any personal data ourselves.</strong>
+        The short version: <strong>we do not collect, store, or transmit any personal data. The app contains no
+        advertising, no analytics, no third-party SDKs, and does not connect to any server.</strong>
     </p>
 
     <h2>1. Data we collect</h2>
-    <p><strong>None.</strong> The app has no user accounts, no sign-in, no analytics, no crash reporting, and no telemetry.
-        All panchang calculations (tithi, nakshatra, yoga, karana, choghadiya, rahu kaal, sunrise, sunset)
-        are performed entirely on your device using astronomical formulas built into the app.</p>
+    <p><strong>None.</strong> The app has no user accounts, no sign-in, no analytics, no remote crash reporting,
+        and no telemetry. All panchang calculations (tithi, nakshatra, yoga, karana, choghadiya, rahu kaal,
+        sunrise, sunset, eclipses, sankrantis) are performed entirely on your device using astronomical formulas
+        built into the app. No data leaves your device.</p>
 
     <h2>2. Data stored on your device</h2>
     <p>The following is stored locally on your device only and never leaves it:</p>
@@ -65,49 +67,54 @@
         <li>Your selected city preset (e.g.&nbsp;Hyderabad, Mumbai)</li>
         <li>Your selected language and theme</li>
         <li>Your sunrise notification preference</li>
+        <li>Your selected vrat reminders (Ekadashi, Pradosh, Sankashti, Purnima / Amavasya)</li>
+        <li>Your selected Ekadashi tradition (Smarta or Vaishnava)</li>
+        <li>Your selected lunar month system (Amanta or Purnimanta)</li>
+        <li>Your birth nakshatra, if you set one to personalize Tarabala and Chandrabala</li>
         <li>A small in-memory cache of recently computed panchang values</li>
+        <li>A local crash log file (used only for your own troubleshooting; never transmitted anywhere)</li>
     </ul>
     <p>This data is wiped when you uninstall the app or clear app data from Android Settings.</p>
 
     <h2>3. Permissions</h2>
     <ul>
-        <li><code>INTERNET</code> &mdash; required by Google Mobile Ads to load advertisements (see §4).</li>
         <li><code>POST_NOTIFICATIONS</code> &mdash; only used if you opt in to the daily sunrise notification.</li>
-        <li><code>RECEIVE_BOOT_COMPLETED</code> &mdash; reschedules your sunrise notification after a device reboot.</li>
-        <li><code>com.google.android.gms.permission.AD_ID</code> &mdash; used by Google Mobile Ads as described below.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code> &mdash; reschedules your sunrise notification after a device reboot,
+            so the daily reminder keeps working without you reopening the app.</li>
+        <li><code>ACCESS_COARSE_LOCATION</code> &mdash; <strong>optional.</strong> Only requested if you tap
+            &ldquo;Use my location&rdquo; during onboarding. We read your device&rsquo;s last-known coarse location
+            <em>once</em>, match it to the nearest city in the app&rsquo;s built-in city list, and discard the
+            coordinates. The location is never stored or transmitted. You can deny this permission and search for
+            your city manually instead.</li>
     </ul>
-    <p>The app does not request location, contacts, storage, microphone, or camera access.</p>
+    <p>The app does not request internet, contacts, storage, microphone, camera, calendar, or precise-location
+        access. The app makes no network connections of any kind during normal use.</p>
 
-    <h2>4. Advertising (Google AdMob)</h2>
-    <p>The app shows banner and interstitial ads served by Google AdMob. AdMob is a Google product and
-        operates under Google&rsquo;s privacy policy. AdMob may collect or use:</p>
-    <ul>
-        <li>Your Android Advertising ID (resettable from Android Settings &rarr; Privacy &rarr; Ads)</li>
-        <li>Approximate (non-precise) location derived from IP address</li>
-        <li>Device and ad-interaction information</li>
-    </ul>
-    <p>This data is collected and processed by Google, not by us. We never see it. To learn more or to opt out
-        of personalized ads, see Google&rsquo;s policies:</p>
-    <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from ads</a></li>
-        <li><a href="https://support.google.com/googleplay/android-developer/answer/9857753" target="_blank" rel="noopener">Reset or delete your Advertising ID</a></li>
-    </ul>
+    <h2>4. Third parties</h2>
+    <p>The app contains no advertising SDKs, no analytics SDKs, no crash-reporting SDKs, and no other third-party
+        SDKs. Earlier development builds used Google AdMob; this has been removed from all released versions
+        of the app.</p>
 
-    <h2>5. Children&rsquo;s privacy</h2>
-    <p>The app is rated for general audiences and is not directed at children under 13. We do not knowingly collect
-        any data from children. AdMob ads served in the app may be subject to family-policy restrictions per
-        Google&rsquo;s configuration.</p>
+    <h2>5. Festival and panchang data</h2>
+    <p>Festival dates, eclipse dates, and panchang labels shipped with the app are bundled as static data files
+        at install time. No festival or calendar data is fetched from any server while the app is in use.</p>
 
-    <h2>6. Festival and panchang data</h2>
-    <p>Festival dates and panchang labels shipped with the app are bundled as static data files at install time.
-        No festival or calendar data is fetched from any server while the app is in use.</p>
+    <h2>6. Opening this Privacy Policy</h2>
+    <p>When you tap the &ldquo;Privacy policy&rdquo; row in the app&rsquo;s Settings, the app opens this URL in
+        your default web browser. That request is handled by your browser, not by the app, and is subject to your
+        browser&rsquo;s and network provider&rsquo;s privacy practices.</p>
 
-    <h2>7. Changes to this policy</h2>
+    <h2>7. Children&rsquo;s privacy</h2>
+    <p>The app is rated for general audiences and is not directed at children under 13. We do not knowingly
+        collect any data from children. Because the app collects no data at all, there is nothing for us to delete
+        if a child has used it.</p>
+
+    <h2>8. Changes to this policy</h2>
     <p>If this policy changes materially, the updated version will be published at this URL with a new
-        &ldquo;Last updated&rdquo; date. Continued use of the app after a change means you accept the revised policy.</p>
+        &ldquo;Last updated&rdquo; date. Continued use of the app after a change means you accept the revised
+        policy.</p>
 
-    <h2>8. Contact</h2>
-    <p>Questions or concerns about this policy: <a href="mailto:hemanth.guvvala@ibsplc.com">hemanth.guvvala@ibsplc.com</a>.</p>
+    <h2>9. Contact</h2>
+    <p>Questions or concerns about this policy: <a href="mailto:hkggroups@gmail.com">hkggroups@gmail.com</a>.</p>
 </body>
 </html>
