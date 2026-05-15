@@ -117,7 +117,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: January 9, 2026</p>
+        <p class="last-updated">Last Updated: May 15, 2026</p>
         
         <p>
             Welcome to <strong>PDF Toolkit</strong>. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application. We are committed to protecting your privacy and ensuring transparency about our data practices.
@@ -149,7 +149,12 @@
         <p>We do not access any other data on your device.</p>
         
         <h3>1.3 Automatically Collected Information</h3>
-        <p>We do not collect analytics, crash reports, or usage statistics. Your app usage remains completely private.</p>
+        <p>To improve app stability and understand how features are used, we collect limited diagnostic data through Google Firebase:</p>
+        <ul>
+            <li><strong>Crash reports</strong> (via Firebase Crashlytics): stack traces, device model, OS version, app version, and a randomly-generated installation ID. Used only to diagnose and fix crashes.</li>
+            <li><strong>Anonymous usage analytics</strong> (via Firebase Analytics): session counts, which tools are opened, and basic device information. Used only to understand which features are useful. Not linked to your identity.</li>
+        </ul>
+        <p>This data <strong>never includes the contents of your PDFs</strong> or any personally identifying information. You can disable analytics in your Google account settings.</p>
         
         <h2>2. Third-Party Services</h2>
         
@@ -184,26 +189,56 @@
         <p>
             Google Play Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
         </p>
-        
+
+        <h3>2.3 Firebase (Google)</h3>
+        <p>
+            We use Google Firebase for crash reporting (Crashlytics) and anonymous analytics. Firebase may collect:
+        </p>
+        <ul>
+            <li>Crash stack traces and device state at time of crash</li>
+            <li>App version, OS version, device model</li>
+            <li>A randomly-generated installation ID</li>
+            <li>Anonymous session and screen-view events</li>
+        </ul>
+        <p>
+            No PDF contents are ever sent to Firebase. Crash and analytics data is encrypted in transit.
+        </p>
+        <p>
+            Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>
+        </p>
+
+        <h3>2.4 Google ML Kit (OCR)</h3>
+        <p>
+            The OCR Scan feature uses Google ML Kit's on-device text recognition. The text recognition model runs entirely on your device — your images and PDFs are <strong>never uploaded</strong> for OCR processing. The ML Kit library may report anonymous usage telemetry (e.g. model version, success / failure) to Google.
+        </p>
+        <p>
+            ML Kit Terms &amp; Privacy: <a href="https://developers.google.com/ml-kit/terms" target="_blank">https://developers.google.com/ml-kit/terms</a>
+        </p>
+
         <h2>3. How We Use Your Information</h2>
         
-        <p>Since we don't collect personal data, there's nothing to use! However:</p>
+        <p>The limited data we do collect is used as follows:</p>
         <ul>
-            <li><strong>File Processing:</strong> Your files are processed locally to perform PDF operations (merge, compress, convert, split)</li>
-            <li><strong>Storage:</strong> Processed files are saved to your device's Downloads/PDFToolkit folder</li>
+            <li><strong>File Processing:</strong> Your files are processed locally to perform PDF operations (view, merge, split, compress, rotate, watermark, protect, sign, OCR, and convert)</li>
+            <li><strong>Storage:</strong> Processed files are saved to your device's local app folder, accessible via Recent Files inside the app</li>
+            <li><strong>Crash Reports:</strong> Diagnostic data is used only to identify and fix bugs and crashes</li>
+            <li><strong>Analytics:</strong> Anonymous usage data helps us decide which features to improve next</li>
             <li><strong>Purchases:</strong> Google Play tracks your subscription status to unlock Pro features</li>
         </ul>
         
         <h2>4. Data Sharing and Disclosure</h2>
         
         <p>
-            <strong>We do not share, sell, or disclose your information to anyone.</strong> Your files never leave your device. The only data shared is:
+            <strong>We do not sell your information.</strong> Your PDF and image files never leave your device. The only data shared with third parties is:
         </p>
         <ul>
-            <li><strong>To Facebook:</strong> Anonymous ad-related data (free users only)</li>
-            <li><strong>To Google:</strong> Purchase verification data (when you buy Pro)</li>
+            <li><strong>To Facebook (Audience Network):</strong> Anonymous ad-related data such as advertising ID and ad interactions (free users only)</li>
+            <li><strong>To Google (Firebase Crashlytics):</strong> Crash reports and basic device info to help us fix bugs</li>
+            <li><strong>To Google (Firebase Analytics):</strong> Anonymous usage events (e.g. which tools are opened)</li>
+            <li><strong>To Google (ML Kit):</strong> Anonymous telemetry about the on-device OCR model only — never any image or extracted text</li>
+            <li><strong>To Google (Play Billing):</strong> Purchase verification data when you buy Pro</li>
         </ul>
-        <p>Both are governed by their respective privacy policies.</p>
+        <p>Each of these is governed by their respective privacy policies linked above.</p>
         
         <h2>5. Data Security</h2>
         
@@ -252,7 +287,7 @@
         <h2>9. International Users</h2>
         
         <p>
-            PDF Toolkit is available globally. Since all processing happens locally on your device, there are no international data transfers. The only cross-border data flows are through Google Play (for purchases) and Facebook (for ads), governed by their privacy policies.
+            PDF Toolkit is available globally. All PDF and image processing happens locally on your device, so your files are never transferred internationally. Limited diagnostic data (crash reports, anonymous analytics) is transmitted to Google Firebase servers, and ad-related data is transmitted to Facebook servers. These transfers are governed by Google's and Facebook's respective privacy policies and are encrypted in transit.
         </p>
         
         <h2>10. Legal Compliance</h2>
@@ -266,7 +301,7 @@
             <li><strong>Other Privacy Laws:</strong> Applicable data protection regulations worldwide</li>
         </ul>
         <p>
-            Since we don't collect personal data, most privacy law requirements don't apply. However, we maintain transparency and user control as best practices.
+            We collect only the limited diagnostic data disclosed above (crash reports and anonymous analytics). We do not collect any personally identifying information, and your PDF files always stay on your device. We maintain transparency and user control as a matter of policy.
         </p>
         
         <div class="contact">
@@ -285,7 +320,7 @@
         </div>
         
         <div class="highlight" style="margin-top: 30px;">
-            <strong>Summary:</strong> PDF Toolkit respects your privacy. Your files stay on your device, we don't collect personal data, and third-party services (ads & billing) are clearly disclosed. You have full control over your data.
+            <strong>Summary:</strong> PDF Toolkit respects your privacy. Your PDF files stay on your device — never uploaded. The only data leaving your device is anonymous crash reports, anonymous usage analytics, and (for free users) ad-related data. No personally identifying information is collected. All third-party services are clearly disclosed above.
         </div>
         
         <p style="text-align: center; margin-top: 40px; color: #64748B; font-size: 0.9em;">
